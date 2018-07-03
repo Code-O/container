@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/check', (req, res, nex) => {
+app.get('/', (req, res, nex) => {
   res.json('inside docker');
 });
 
@@ -17,6 +17,7 @@ app.post('/secApp', (req, res, next) => {
     if (error) console.log(error);
     console.log('RESULT FROM DOCKER: ', stdout);
   });
+  res.json('leave now!');
 });
 
 app.listen(PORT, () => {

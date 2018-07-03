@@ -1,6 +1,7 @@
 const { exec } = require('child_process');
 const args = process.argv;
-const myFunc = args[2];
+console.log('ARGS:', args[2]);
+const myFunc = args[2] || '';
 const userValue = eval(
   myFunc +
     `${myFunc.slice(
