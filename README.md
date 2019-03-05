@@ -1,4 +1,7 @@
-# container
-A microservice that calculates time effeciency of code solution when solution is routed to this server.  
-CORS enables connection with this server to main app.  
-Docker container runs per test.
+# microservice container
+
+CORS enables connection with this server to main app and runs a docker container each time a request is made to this server.  
+
+A microservice that calculates time effeciency of a code solution when the solution is routed to this server.  
+  
+
